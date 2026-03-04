@@ -1,0 +1,1 @@
+// booking-extension feature types

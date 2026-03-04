@@ -1,0 +1,1 @@
+// Environment-prefixed Firebase paths

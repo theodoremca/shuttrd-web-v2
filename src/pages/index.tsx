@@ -1,21 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import HomeScreen from "@/screens/home";
+import MainLayout from "@/components/layouts/main-layout";
+import type { NextPageWithLayout } from "@/pages/_app";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const HomePage: NextPageWithLayout = () => {
+  return <HomeScreen />;
+};
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+HomePage.getLayout = (page) => <MainLayout>{page}</MainLayout>;
 
-export default function Home() {
-  return (
-    <div className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}>
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1>Hello World</h1>
-      </main>
-    </div>
-  );
-}
+export default HomePage;

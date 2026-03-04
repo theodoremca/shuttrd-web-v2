@@ -1,0 +1,1 @@
+// coupon feature types

@@ -1,0 +1,1 @@
+// AuthModal component
