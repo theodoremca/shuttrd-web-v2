@@ -1,11 +1,5 @@
 import MessagesScreen from "@/screens/messages";
-import MainLayout from "@/components/layouts/main-layout";
-import type { NextPageWithLayout } from "@/pages/_app";
 
-const MessagesPage: NextPageWithLayout = () => {
+export default function MessagesPage() {
   return <MessagesScreen />;
-};
-
-MessagesPage.getLayout = (page) => <MainLayout>{page}</MainLayout>;
-
-export default MessagesPage;
+}
